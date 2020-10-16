@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "flyer_to_gmaps"
+version = "0.1.0"
+description = ""
+authors = ["Anthony Hashemi <anthony.hashemi@eigentech.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pillow = "^8.0"
+easyocr = "^1.1"
+beautifulsoup4 = "^4.9"
+google = "^3.0"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^18.3-alpha.0", allows-prereleases = true}
+autopep8 = "^1.5"
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

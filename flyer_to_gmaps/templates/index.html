@@ -1,0 +1,20 @@
+<form action="results/" method="post" enctype="multipart/form-data">
+  {% csrf_token %} Event Flyer to Tickets
+  <div class="form">
+    <input
+      type="file"
+      class="btn"
+      value="Choose File"
+      name="my_image"
+      required
+      onchange="readURL(this)"
+    />
+    <input
+      type="submit"
+      class="hashtagger-button"
+      value="Upload"
+      name="print_btn"
+    />
+    <img id="blah" src="my_image" alt="my_image" />
+  </div>
+</form>
