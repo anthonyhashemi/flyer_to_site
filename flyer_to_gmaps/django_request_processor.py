@@ -9,8 +9,7 @@ from flyer_to_text_script import get_ticket_url_from_file
 
 
 def get_ticket_url_from_uploaded_file(uploaded_file):
-    # name = uploaded_file.name
-    name = "tmp_img"
+    name = uploaded_file.name
     tmp_file_path = default_storage.path("tmp/" + name)
     with open(tmp_file_path, "wb+") as tmp_file:
         for chunk in uploaded_file.chunks():
