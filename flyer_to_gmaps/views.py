@@ -2,7 +2,7 @@ import easyocr
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 
-from flyer_to_gmaps.django_request_processor import get_ticket_url_from_uploaded_file
+from flyer_to_gmaps.helpers import get_ticket_url_from_uploaded_file
 from flyer_to_text_script import get_ticket_url_from_file
 
 
